@@ -1,0 +1,22 @@
+.swiper-buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  .swiper-pagination,
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $body-color;
+    margin-right: 24px;
+    margin-top: 0;
+  }
+  .swiper-pagination {
+    background-color: #FFFFFF66;
+  }
+  .swiper-pagination-progressbar-fill {
+    background-color: $secondary-text-color;
+  }
+}

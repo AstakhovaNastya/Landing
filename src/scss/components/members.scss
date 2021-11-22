@@ -1,0 +1,125 @@
+
+
+
+.members-wrap {
+  position: relative;
+  padding: 20px 0;
+  @include media-breakpoint-up(lg) {
+    padding: 60px 0;
+  }
+}
+
+.comments {
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 72px;
+  }
+    
+}
+
+.comments-title {
+  max-width: 332px;
+  padding-bottom: 48px;
+  h2 {
+    font-weight: 400;
+    line-height: 45px;
+  }
+}
+
+.comment-list {
+   @include media-breakpoint-up(sm) {
+      margin: 0 -8px ;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  .comment-item {
+    padding-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      padding: 0 8px 16px;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0 8px;
+      flex: 0 0 33.3%;
+      max-width: 33.3%;
+    }
+  }
+  .comment-item-holder {
+    border: 1px solid #CECDCA;
+    border-radius: 15px;
+    padding: 33px 25px;
+  }
+  .rating-stars {
+    display: flex;
+    .icon-star-full {
+      font-size: 16px;
+      padding-right: 4px;
+      margin-bottom: 24px;
+      color: $primary;
+    }
+  }
+  .coment-author {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .location {
+    line-height: 16px;
+    color: #00000099;
+    margin-bottom: 24px;
+  }
+  .comment-text {
+    line-height: 25px;
+    color: #000000CC;
+    margin: 0;
+  }
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  @include media-breakpoint-up(lg) {
+    justify-content: space-between;
+  }
+  li {
+    padding: 0 20px 20px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    @include media-breakpoint-up(sm) {
+      flex: 0 0 33.3%;
+      max-width: 33.3%;
+    }
+    @include media-breakpoint-up(md) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    @include media-breakpoint-up(lg) {
+      flex: 0;
+      max-width: none;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  img {
+    @include media-breakpoint-down(md) {
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+.members-img-bottom {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

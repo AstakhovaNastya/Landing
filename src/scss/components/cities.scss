@@ -1,0 +1,92 @@
+.cities {
+  background-color: #1B1918;
+  padding: 120px 0 96px;
+  color: $secondary-text-color;
+}
+
+.cities-header {
+  max-width: 457px;
+  padding-bottom: 66px;
+  h2 {
+    line-height: 44.8px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  p {
+    line-height: 25.6px;
+    color: #A7A6A4;
+
+  }
+}
+
+
+.slide-item {
+  position: relative;
+  .citie {
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    font-size: 24px;
+    line-height: 38px;
+    padding-bottom: 0;
+  }
+  .slide-img-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 72.2%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.favourite-cities {
+  margin-top: 80px;
+  .favourite-cities-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+  .favourite-cities-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding-bottom: 30px;
+    li {
+      padding: 0 10px 14px;
+      flex: 0 0 50%;
+      max-width: 50%;
+      @include media-breakpoint-up(sm) {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+      }
+      @include media-breakpoint-up(md) {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 16.6%;
+        max-width: 16.6%;
+      }
+      h5 {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        margin-bottom: 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 14px;
+        color: #A7A6A4;
+      }
+    }
+  }
+}

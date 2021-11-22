@@ -1,0 +1,46 @@
+.landing-membership-holder {
+  padding: 96px 0 46px;
+  .top-bar {
+    padding-bottom: 64px;
+  }
+  .title {
+    max-width: 330px;
+    h2 {
+      line-height: 32px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .btn-link {
+      padding-left: 0;
+    }
+  }
+  .statistic {
+    font-size: 19px;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      padding-top: 43px;
+    }
+    p {
+      line-height: 30px;
+      color: #787573;
+    }
+  }
+  .card {
+    max-width: 375px;
+    padding-bottom: 50px;
+    .img-wrap {
+      margin-bottom: 16px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    h5 {
+      line-height: 30px;
+      font-weight: 400;
+    }
+    .btn-link {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+#wrap {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #08786C;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h1,
+.h1 {
+	font-size: 35px;
+	@include media-breakpoint-up(md) {
+		font-size: 40px;
+	}
+	@include media-breakpoint-up(xl) {
+		font-size: 48px;
+	}
+}
+
+h2 {
+	font-size: 28px;
+	@include media-breakpoint-up(xl) {
+		font-size: 32px;
+	}
+}
+
+h5 {
+	font-size: 20px;
+}
+
+p {
+	margin-bottom: 14px;
+}

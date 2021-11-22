@@ -1,0 +1,59 @@
+.landing-explorer {
+  background-color: #FBEDE4;
+}
+
+.landing-explorer-wrap {
+  padding: 64px 0;
+  .img-holder {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.advantage {
+  max-width: 490px;
+  margin: 0 auto;
+  @include media-breakpoint-up(xl) {
+    padding-top: 80px;
+  }
+  h2 {
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 37px;
+    }
+  }
+}
+
+.advantage-menu {
+  li {
+    position: relative;
+    padding-left: 68px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 34px;
+    }
+    h5 {
+        font-size: 19px;
+        line-height: 30px;
+        font-weight: 400;
+        margin: 0;
+    }
+  }
+}
+
+.advantage-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
